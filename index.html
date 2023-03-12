@@ -1,6 +1,7 @@
 <html>
     <head>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+
     </head>
     <body topmargin="0"  leftmargin="0" rightmargin="0" bottommergin="0" >
         <script>
@@ -15,27 +16,28 @@
             createCanvas(windowWidth, windowHeight);
             }
 
-/////////////////////
+/////////////////////t
 
             function draw() {
             textSize(16);
             textAlign(CENTER);
 
 
+
             background(231, 231, 233);
-            text(sent, 0, 80, windowWidth, 1000); 
+            text(sent, 0, 70, windowWidth, 1000); 
 
         }
 
         function keyPressed() {
                 if (keyCode === 48) {
-                    sent = '텍스트 박스를 클릭한 후, 키보드 1, 2, 3, 4, 5, 6을 차례대로 하나씩 눌러주세요.';
+                    sent = '회색 영역을 클릭한 후, 키보드 1, 2, 3, 4, 5, 6, 7을 차례대로 하나씩 눌러주세요.';
                 } 
                 if (keyCode === 49) {
                     sent = 'Feel visually에 방문해주셔서 감사합니다.';
                 } 
                 if (keyCode === 50) {
-                    sent = '코드를 활용한 시각과 타 감각의 연결을 전시하는 웹사이트 입니다.';
+                    sent = '이 웹사이트는 코드를 활용하여 시각 외의 감각을 시각적으로 표현합니다.';
                 } 
                 if (keyCode === 51) {
                     sent = '상단의 3개의 아이콘을 통해 관람할 수 있습니다.';
@@ -48,7 +50,10 @@
                 } 
                 if (keyCode === 54) {
                     sent = '세번째는 겨울의 향이라는 후각적 감각을 시각적으로 표현합니다.';
-                }  
+                } 
+                if (keyCode === 55) {
+                    sent = '마지막으로, 즐겁게 감상해주세요!';
+                }   
 
                 
             }
