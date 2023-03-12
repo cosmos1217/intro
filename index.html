@@ -6,7 +6,9 @@
         <script>
 
             let value = 0;
-            let sent = '키보드 1 2 3 4 5 6를 차례대로 하나씩 눌러주세요.';
+            let sent = '텍스트 박스를 클릭한 후, 키보드 1, 2, 3, 4, 5, 6을 차례대로 하나씩 눌러주세요.';
+
+
 
 
             function setup() {
@@ -16,14 +18,18 @@
 /////////////////////
 
             function draw() {
-            background(220);
-            text(sent, 40, 40, 500, 500); 
+            textSize(16);
+            textAlign(CENTER);
+
+
+            background(231, 231, 233);
+            text(sent, 70, 70, 1000, 1000); 
 
         }
 
         function keyPressed() {
                 if (keyCode === 48) {
-                    sent = '키보드 1 2 3 4 5 6를 차례대로 하나씩 눌러주세요.';
+                    sent = '텍스트 박스를 클릭한 후, 키보드 1, 2, 3, 4, 5, 6을 차례대로 하나씩 눌러주세요.';
                 } 
                 if (keyCode === 49) {
                     sent = 'Feel visually에 방문해주셔서 감사합니다.';
